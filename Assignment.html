@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS template</title>
+  <style>
+    {box-sizing: border-box}
+    body{
+      font-family: "DejaVu Sans",;
+
+    }
+    /*style the header*/
+
+    header{
+      background-color: rosybrown;
+      padding: 30px;
+      text-align: center;
+      font-size: 35px;
+      color: #cccccc;
+    }
+    /*create two columns/boxes that floats next to each other*/
+    nav{
+      float: left;
+      width: 30%;
+      height: 300px;
+      /*only for demonstration should be removed*/
+      padding: 20px;
+
+    }
+    /*style the list inside the menu*/
+
+nav ul {
+
+  list-style-type: none;
+  padding: 0;
+}
+article{
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: darksalmon;
+  height: 300px;
+}
+/*clear floats after the columns*/
+    section::after
+    {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    /*style the footer*/
+footer{
+  padding: 10px;
+  text-align: center;
+  color: darksalmon;
+}
+
+@media(max-width: 600px)
+{
+  nav,article {width: 100%}
+
+
+}
+
+  </style>
+</head>
+<body>
+<h2>Ways to find where you are when lost</h2>
+<p>First i guess you need to look at any landmarks you can recognise. You can also use your phone to help you find your location. You can call your family or friend to let them know where you are or ask them to pick you up.</p>
+<p>The best part of always getting lost is that you get to explore and know more places so do not worry it is okay and it actually happens a lot to people.</p>
+<header><h2>cities</h2></header>
+
+<section>
+  <nav>
+    <ul>
+       <li><a href="#">London</a></li>
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+
+    </ul>
+  </nav>
+  <article>
+    <h1>London</h1>
+    <p>
+      London is the most popular city in England. It is has a very large population and to add on that it is actually the most beautiful.
+      <p>The city has very outstanding scenaries that you would love to see during your summer vacations.</p>
+    </p>
+  </article>
+  <img src="https://www.london.ac.uk/sites/default/files/styles/max_1300x1300/public/2018-10/london-aerial-cityscape-river-thames_1.jpg?itok=6LenFxuz" alt=""width="300"height="300">
+</section>
+<footer>
+  <p>Thankyou for visiting our site</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,42 @@
+
+p {
+  font-family: aakar;
+  alignment: center;
+  font-size: medium;
+
+}
+body{
+  background-image: url(https://thumbs.dreamstime.com/b/hope-key-label-concept-47541518.jpg);
+}
+
+table{
+  width:100%
+
+
+
+}
+th,td{
+  border: 3px solid turquoise;
+  font-family: "Century Schoolbook L";
+  text-align: center;
+  padding: 5px;
+}
+tr:nth-child(even)
+{background-color: bisque}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
